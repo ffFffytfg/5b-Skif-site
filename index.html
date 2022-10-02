@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт 5-Б класу</title>
+    <style>
+        .text{
+            background:rgb(150, 150, 200);
+            padding:1em;
+            margin:2em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+        }
+        #start{
+            background:rgb(100, 100, 150);
+            padding:1em;
+            margin:1em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+        }
+        body{
+            background:rgb(200, 200, 200);
+        }
+        .btn{
+            background:rgb(255, 175, 100);
+            padding:1em;
+            margin:2em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+            border:none;
+        }
+        #btns{
+            background:rgb(150, 150, 150);
+            padding:1em;
+            margin:2em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+        }
+        #hidden{
+            background:rgb(200, 200, 250);
+            padding:1em;
+            margin:2em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+        }
+        .rzkday{
+            background:rgb(255, 200, 100);
+            padding:0.5em;
+            margin:2em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+            display:inline-block;
+        }
+        .rzkname{
+            background:rgb(200, 150, 50);
+            padding:0.5em;
+            margin:2em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+        }
+        .rzklesn{
+            background:rgb(125, 125, 200);
+            padding:0.3em;
+            margin:0.5em;
+            box-shadow: 5px 5px 5px rgb(50, 50, 50);
+            border-radius:10px;
+        }
+        #dz{
+            color:rgb(255, 255, 255);
+            background:rgb(50, 100, 50);
+            border:solid black;
+            padding:1em;
+        }
+        #nvn{
+            background:rgb(255, 200, 100);
+            border:solid black;
+            padding:1em;
+        }
+        #pdr{
+            background:rgb(150, 150, 255);
+            border:solid black;
+            padding:1em;
+        }
+        #canv{
+            border:solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="start"><h1>Вітаємо!<br>Це сайт 5-Б класу</h1></div>
+<div class="text"><h2>Тут ви знайдете</h2><h3>пiдручники, домашне завдання,<br>новини та гру про<br>наш клас!</h3></div>
+<div id="btns">
+    <button class="btn" onclick="document.getElementById('pdr').removeAttribute('hidden');document.getElementById('dz').setAttribute('hidden', 'hidden');document.getElementById('nvn').setAttribute('hidden', 'hidden');document.getElementById('gra').setAttribute('hidden', 'hidden');">пiдручники</button><button class="btn" onclick="document.getElementById('dz').removeAttribute('hidden');document.getElementById('pdr').setAttribute('hidden', 'hidden');document.getElementById('nvn').setAttribute('hidden', 'hidden');document.getElementById('gra').setAttribute('hidden', 'hidden');">домашне завдання</button><br><button class="btn" onclick="document.getElementById('nvn').removeAttribute('hidden');document.getElementById('dz').setAttribute('hidden', 'hidden');document.getElementById('pdr').setAttribute('hidden', 'hidden');document.getElementById('gra').setAttribute('hidden', 'hidden');">новини</button><button class="btn" onclick="document.getElementById('gra').removeAttribute('hidden');document.getElementById('dz').setAttribute('hidden', 'hidden');document.getElementById('nvn').setAttribute('hidden', 'hidden');document.getElementById('pdr').setAttribute('hidden', 'hidden');" id="igra">гра про клас</button>
+    <div id="hidden">
+        <div id="pdr" hidden="hidden">
+            <a href="https://drive.google.com/file/d/1VUQnni-YDIKJM2pIZ1hy2IOGGczbatYG/view?usp=sharing" target="_blank" style="color:rgb(0, 0, 0);text-decoration:underline rgb(200, 200, 250);">Нажми на мене щоб скачати!</a>
+        </div>
+        <div id="dz" hidden="hidden">
+            Нема
+        </div>
+        <div id="nvn" hidden="hidden">
+            Нема
+        </div>
+        <div id="gra" hidden="hidden">
+            <canvas id="canv"></canvas>
+        </div>
+    </div>
+</div>
+<div class="text" id="rzk">
+    <div class="rzkday">
+        <div class="rzkname"><h2>Понедiлок</h2></div>
+        <div class="rzklesn">Укр. мова</div>
+        <div class="rzklesn">Математика</div>
+        <div class="rzklesn">Інформатика</div>
+        <div class="rzklesn">Англ. мова</div>
+        <div class="rzklesn">Історія</div>
+        <div class="rzklesn">Технології</div>
+        <div class="rzklesn">Технології</div>
+    </div>
+    <div class="rzkday">
+        <div class="rzkname"><h2>Вівторок</h2></div>
+        <div class="rzklesn">Математика</div>
+        <div class="rzklesn">Укр. літ.</div>
+        <div class="rzklesn">Математика</div>
+        <div class="rzklesn">Драм. і театр</div>
+        <div class="rzklesn">Природн. науки</div>
+        <div class="rzklesn">Фіз-ра</div>
+    </div>
+    <div class="rzkday">
+        <div class="rzkname"><h2>Середа</h2></div>
+        <div class="rzklesn">Англ. мова</div>
+        <div class="rzklesn">Укр. мова</div>
+        <div class="rzklesn">Зар. літ.</div>
+        <div class="rzklesn">Математика</div>
+        <div class="rzklesn">Природн. науки.</div>
+        <div class="rzklesn">Фіз-ра</div>
+    </div>
+    <div class="rzkday">
+        <div class="rzkname"><h2>Четвер</h2></div>
+        <div class="rzklesn">Укр. літ.</div>
+        <div class="rzklesn">Англ. мова</div>
+        <div class="rzklesn">Укр. мова</div>
+        <div class="rzklesn">ЗБД</div>
+        <div class="rzklesn">Математика</div>
+        <div class="rzklesn">Мис. обр.</div>
+        <div class="rzklesn">Мис. муз.</div>
+    </div>
+    <div class="rzkday">
+        <div class="rzkname"><h2>П'ятниця</h2></div>
+        <div class="rzklesn">Класна год.</div>
+        <div class="rzklesn">Укр. мова</div>
+        <div class="rzklesn">Зар. літ.</div>
+        <div class="rzklesn">Математика</div>
+        <div class="rzklesn">Фіз-ра</div>
+        <div class="rzklesn">Англ. мова</div>
+    </div>
+</div>
+</body>
+<script>
+    var canvas = document.getElementById('canv');
+    var ctx = canvas.getContext('2d');
+    var mode = 1;
+    var mousex, mousey = 0;
+    var mousedown = false;
+    function updateCanvas(){
+        if (mode==1){
+            ctx.fillColor = 'red';
+            ctx.fillRect(0, 0, 100, 100);
+        }
+    }
+    function updateMode(){
+
+    }
+    function updater(e){
+        while (true){
+            mousex = e.clientX;
+            mousey = e.clientY;
+            updateMode();
+            updateCanvas();
+            setTimeout (()
+        }
+    }
+    function start(e){
+        updater(e);
+    }
+    addEventListener('mousedown', () => {mousedown = true});
+    addEventListener('mouseup', () => {mousedown = false});
+    document.getElementById('igra').onclick = function (e) {
+        start(e);
+    };
+</script>
+</html>
